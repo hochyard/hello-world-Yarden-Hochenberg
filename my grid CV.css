@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px; 
+    grid-template-rows: 150px 600px;
+    align-content: center;
+}
+
+.Header {
+    grid-column: 1 / span 3;
+}
+.Main {
+    grid-column: 1 / span 3;
+}
+
+div > div {
+    background-color: rgba(139, 90, 90, 0.5);
+}
