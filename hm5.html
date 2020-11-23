@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Home Work5</title>
+    </head>
+    <body>
+        <h1>Home Work5</h1>
+        <p id="p1"></p>
+        <script>
+            document.getElementById('p1').innerHTML="Determining p1 from body"
+        </script>
+        <p id="p2"></p>
+        <script>
+            function myFunction(a,b){
+                return a*b;
+            }
+            document.getElementById('p2').innerHTML="Determining p2 from body by function: "+ myFunction(1,2)
+        </script>
+
+        <p id="p4">3*4=?</p>
+        <button type="button" onclick="document.getElementById('p4').innerHTML=myFunction(3,4)">Click to solve the problem</button>
+        <button type="button" onclick="this.innerHTML=Date()">Click to get the date</button>
+        <br><br/>
+        <img id="myPic" src="frog4.jpg" alt="Cant shoe the pic" width="100px">
+        <button type="button" onclick="document.getElementById('myPic').src='linkedIn picture.jpg'">Click to change the frog into a princess</button>
+    </body>
+</html>
