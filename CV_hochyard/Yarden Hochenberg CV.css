@@ -1,0 +1,124 @@
+body {
+    background-color:rgba(150, 101, 101, 0.5);
+    font-family: 'Segoe UI', Tahoma
+}
+
+.header {
+    position: fixed;
+    padding: 10px;
+    width: 98%;
+    background: rgba(8, 1, 1, 0.5);
+    text-align: center;
+}
+
+#mainPic{
+    width: 120px;
+    border-radius: 60%;
+}
+#name {
+	font-size: 35px;
+    color: rgb(243, 213, 213);
+}
+
+#contact {
+	font-size: 17px;
+    color: rgb(243, 213, 213);
+}
+
+a:link {
+    color: rgb(243, 213, 213);
+    text-decoration:none;
+}
+
+a:visited {
+    color: rgb(243, 213, 213);
+}
+
+a:hover {
+    color: blue;
+}
+
+
+h3.contents {
+    font-weight: bold;
+    color:  rgba(37, 12, 12, 0.5);
+    font-size: 25px;
+    margin-bottom: -10px;
+}
+
+h1.dates {
+    font-weight: bold;
+    margin-left: 5px;
+    color:  rgba(37, 12, 12, 0.5);
+    font-size: 18px;
+}
+
+p.text {
+    margin-left: 25px;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.description {
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+ul{
+    display: inline-block;
+    margin-left: 25px;
+    margin-bottom: -25px;
+}
+
+.list{
+    font-size: 15px;
+}
+
+/* Openning modal box */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+}
+  
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* Form */
+
+.form{
+    background-color:  rgba(8, 1, 1, 0.5);
+    color: rgb(243, 213, 213);
+    padding: 10px;
+    text-align: center;
+}
+
+#left {
+    font-size: 15px;
+    margin-left: 20px;
+}
