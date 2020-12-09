@@ -1,5 +1,5 @@
 body {
-    background-color:rgba(150, 101, 101, 0.5);
+    background-color:rgba(116, 88, 88, 0.5);
     font-family: 'Segoe UI', Tahoma
 }
 
@@ -38,8 +38,7 @@ a:hover {
     color: blue;
 }
 
-
-h3.contents {
+.contents {
     font-weight: bold;
     color:  rgba(37, 12, 12, 0.5);
     font-size: 25px;
@@ -107,6 +106,10 @@ font-weight: bold;
 color: #000;
 text-decoration: none;
 cursor: pointer;
+}
+
+#bold:hover{
+    font-weight: bold;
 }
 
 /* Form */

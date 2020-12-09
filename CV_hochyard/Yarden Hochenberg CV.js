@@ -1,8 +1,6 @@
 
 function openningFunction() {
-
     var modal = document.getElementById("myModal");
-
     var span = document.getElementsByClassName("close")[0];
     modal.style.display = "block";
 
@@ -10,7 +8,7 @@ function openningFunction() {
         modal.style.display = "none";
     }
 
-    // When the user clicks anywhere outside of the modal, close it
+// When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
@@ -18,7 +16,7 @@ function openningFunction() {
     }
 }
 
-// form
+// form thank you
 function thankyouFunction(){
     var o = document.forms["frm"]["PhoneNum"].value;
     if (o!="") {

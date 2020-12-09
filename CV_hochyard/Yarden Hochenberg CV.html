@@ -3,10 +3,9 @@
     <head>
         <title>Yarden Hochenberg CV</title>
         <link rel="stylesheet" href="Yarden Hochenberg CV.css">
+        <script src="Yarden Hochenberg CV.js"></script>
     </head>
     <body onload="openningFunction()">
-        <script src="Yarden Hochenberg CV.js"></script>
-
         <!-- openning -->
         <div id="myModal" class="modal">
         <div class="modal-content">
@@ -31,14 +30,14 @@
                 <img src="linkedin.png" alt="Can't load the image" width="20px">
                 <a href="https://www.linkedin.com/in/yarden-hochenberg-41bb30193/" target="_blank">LinkedIn Profile</a>
             </div>
-            <a href="Yarden Hochenberg - CV.pdf" download="Yarden Hochenberg CV"><button style="background-color: rgb(243, 213, 213);">Download to pdf</button></a>
+            <a id="bold" href="Yarden Hochenberg - CV.pdf" download="Yarden Hochenberg CV"><button id="bold" style="background-color: rgb(243, 213, 213);">Download to pdf</button></a>
         </header>
 
         <!-- content -->
         <div>
-            <br><br><br><br><br><br><br><br><br><br>            
+            <br><br><br><br><br><br><br><br><br><br>
             <!--Education-->
-            <h3 class= "contents">Education</h3>
+            <h3 class= "contents" onmouseover="style.color='black'" onmouseout="style.color='rgba(37, 12, 12, 0.5)'">Education</h3>
             <h1 class="dates">2020 - present:</h1>
             <p class="text"><b>M.Sc. in Industrial Engineering and Management</b> (specializing in Data science) from Ben-Gurion University of the Negev.
             <dl class="description">
@@ -56,9 +55,10 @@
                 <dd style="margin-top: -10px;">- Psychometric grade: 706.</dd>
             </dl>
             </p>
+
             
             <!--Skills-->
-            <h3 class= "contents">Skills</h3>
+            <h3 class= "contents" onmouseover="style.color='black'" onmouseout="style.color='rgba(37, 12, 12, 0.5)'">Skills</h3>
             <ul>
                 <li>Python</li> 
                 <li>Java</li>
@@ -85,7 +85,7 @@
             </ul>
 
             <!--Experience-->
-            <h3 class= "contents">Experience </h3>
+            <h3 class= "contents" onmouseover="style.color='black'" onmouseout="style.color='rgba(37, 12, 12, 0.5)'">Experience </h3>
             <h1 class="dates">2020 - present:</h1>
             <p class="text"><b>Teaching Assistant in "Databases" course</b> – SQL language, Ben-Gurion University of the Negev.</p>
             <h1 class="dates">2020 - present:</h1>
@@ -106,14 +106,14 @@
             <p class="text">Private tutor in "Introduction to Java Programming" course – Aiding students with their programming studies.</p>
                 
             <!--Projects-->
-            <h3 class= "contents">Projects</h3>
+            <h3 class= "contents" onmouseover="style.color='black'" onmouseout="style.color='rgba(37, 12, 12, 0.5)'">Projects</h3>
             <dl class="description">
             <dl class="list">
                 <dd>- Facebook Israel Virtual Hackathon.</dd>
             </dl>
 
             <!--Volunteering-->
-            <h3 class= "contents">Volunteering</h3>
+            <h3 class= "contents" onmouseover="style.color='black'" onmouseout="style.color='rgba(37, 12, 12, 0.5)'">Volunteering</h3>
             <h1 class="dates">2004 - 2012:</h1>
             <p class="text"><b>"Scouts" youth movement member</b> at "Aviv" tribe – counseling for a year in "Beit HaYeled" boarding school in Tel Aviv and instructing children with special needs.</p>                 
 
@@ -121,12 +121,12 @@
             <p class="text"><b>Member of Israel's National Team</b> in gymnastics and acrobatics – Representing Israel in European and World Championships.</p>
                 
             <!--Military Service-->
-            <h3 class= "contents">Military Service</h3>
+            <h3 class= "contents" onmouseover="style.color='black'" onmouseout="style.color='rgba(37, 12, 12, 0.5)'">Military Service</h3>
             <h1 class="dates">2013 - 2015:</h1>
             <p class="text">Combat Fitness Instructor, School for Commander and Infantry, Israel Defense Forces.</p>
 
             <!--Languages-->
-            <h3 class= "contents">Languages</h3>
+            <h3 class= "contents" onmouseover="style.color='black'" onmouseout="style.color='rgba(37, 12, 12, 0.5)'">Languages</h3>
             <dl class="list">
                 <dd>- Hebrew: Native Speaker.</dd>
                 <dd>- English: Very High Proficiency.</dd>
@@ -147,7 +147,7 @@
                 <label for="Comment">Comments</label><br>
                 <textarea id="Comment" name="Comment" cols="70" rows="3">
                 </textarea><br><br>
-                <input type="Submit" value="Submit" onclick="thankyouFunction()">
+                <input id="bold" type="Submit" value="Submit" onclick="thankyouFunction()">
             </form>
         </div>   
     </body>
