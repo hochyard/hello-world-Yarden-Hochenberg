@@ -35,7 +35,7 @@
 
         <!-- content -->
         <div>
-            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br>
             <!--Education-->
             <h3 class= "contents" onmouseover="style.color='black'" onmouseout="style.color='rgba(37, 12, 12, 0.5)'">Education</h3>
             <h1 class="dates">2020 - present:</h1>
@@ -132,23 +132,29 @@
                 <dd>- English: Very High Proficiency.</dd>
             </dl>
         </div>
+
+
         <!--form-->
-        <div class="form">
-            <h1 style="size: 17px; color: rgb(243, 213, 213);">Contact Me</h1>
-            <form name="frm">
-                <label id="left" for="CompanyName" style="display: inline-block;">Company Name</label>
-                <input type="text" id="CompanyName" name="CompanyName">
-                <label id="left" for="FirstName" style="display: inline-block;">First Name</label>
-                <input type="text" id="FirstName" name="FirstName">
-                <label id="left" for="LastName">Last Name</label>
-                <input type="text" id="LastName" name="LastName">
-                <label id="left" for="PhoneNum">Phone Number</label>
-                <input type="tel" id="PhoneNum" name="PhoneNum" required><br><br>
-                <label for="Comment">Comments</label><br>
-                <textarea id="Comment" name="Comment" cols="70" rows="3">
-                </textarea><br><br>
-                <input id="bold" type="Submit" value="Submit" onclick="thankyouFunction()">
+        <button class="open-button" onclick="openForm()">Contact Me</button>
+
+        <div class="form-popup" id="myForm">
+            <form class="form-container" name="frm">
+                <h1>Contact Details:</h1>
+                <label for="CompanyName"><b>Company Name</b></label>
+                <input type="text" placeholder="Enter Company Name" name="Company Name">
+
+                <label for="Full Name"><b>Full Name</b></label>
+                <input type="text" placeholder="Enter Full Name" name="Full Name">
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email">
+
+                <label for="Phone Number"><b>Phone Number</b></label>
+                <input type="text" placeholder="Enter Phone Number" name="Phone Number" required>
+
+                <button type="submit" class="btn" onclick="thankyouFunction()">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
-        </div>   
+        </div>
     </body>
 </html>
