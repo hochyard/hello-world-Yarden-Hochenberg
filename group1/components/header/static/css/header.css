@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color:#d4b4a2;
+}
+
+header {
+    z-index: 9999; 
+    padding: 5px;
+    width: 100%;
+    background: whitesmoke;
+    text-align: center;
+    /*disable content selection*/
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.header_container{
+    padding: 2px;
+}
+
+.header_container h1{
+    color: #f6e3da;
+    -webkit-text-stroke: 2px black; /* width and color */
+    font-size: 54px;
+}
+
+.header_container h3{
+    color: #f6e3da;
+    -webkit-text-stroke: 2px black; /* width and color */
+    margin-top: -40px;
+    font-size: 26px;
+}
+
+/*bar*/
+
+nav{
+    position: sticky;
+    z-index: 1;
+    top:0;
+    margin-top: -25px;
+}
+
+.nav-bar {
+    padding: 5px;
+    width: 100%;
+    font-size: 18px;
+    margin-top: -8px;
+}
+
+.nav-bar a{
+    font-weight: normal;
+}
+
+.option{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 13px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 13px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 100%;
+    font-weight: normal;
+}
+
+.dropdown .dropdown-content a{
+    color: var(--main-color-4, black);
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+}
+
+.dropdown .dropdown-content a:hover {
+    background-color: rgb(245, 241, 241);
+}
+
+.nav-bar p{
+    display: inline-block;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    font-weight: normal;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    top:100%;
+    right: 0px;
+}
+
+.dropdown:hover  , .nav-bar a:hover {
+    background-color: #eee2de;
+}
+
+.arrowDown{
+    border: solid #3b3b3b;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/*login*/
+
+.top-nav a , .open-button {
+    float: right;
+    display: block;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.top-nav img{
+    width: 20px;
+}
+
+.open-button:focus, input[type=text]:focus , input[type=password]:focus{
+    outline: none;
+}
+
+.top-nav input[type=text] input[type=password]{
+    padding: 6px;
+    margin-top: 6px;
+    font-size: 17px;
+    border: none;
+}
+
+.open-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.form-popup {
+    display: none;
+    position: absolute;
+    right:62px;
+    top: 45px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: white;
+    text-align: left;
+}
+
+.form-container h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    text-align: right;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    text-align: right;
+}
+
+.form-container input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+.form-container .cancel {
+    background-color: #de9878;
+}
+
+.form-container .signup {
+    background-color: rgb(163, 158, 158);
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.form-container p {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+ 
+ p span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+
+ header>hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+ }
+
+

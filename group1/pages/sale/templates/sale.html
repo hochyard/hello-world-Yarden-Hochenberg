@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+    <head>
+        <title>פריטי חיסול</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="group 1">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link rel="stylesheet" href="/group1/pages/sale/static/css/sale.css">
+        <link rel="stylesheet" href="/group1/components/header/static/css/header.css">
+        <link rel="stylesheet" href="/group1/components/footer/static/css/footer.css">
+        <link rel="stylesheet" href="/group1/components/photo_title/static/css/photo_title.css">
+        <script src="/group1/components/header/static/js/header.js"></script>
+        <script src="/group1/pages/sale/static/js/sale.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <div class="header_container">
+                <div class="top-nav">
+                    <a href="/group1/pages/cart/templates/cart.html">
+                        <img src="/group1/components/header/static/img/shopping-bag.png" alt="cart" style="margin-right: 20px;">
+                    </a>
+                    <button class="open-button" onclick="openLoginForm()">
+                        <img src="/group1/components/header/static/img/user.png" alt="login" >
+                    </button>
+                    
+                    <a href="/group1/pages/favorites/templates/favorites.html">
+                        <img src="/group1/components/header/static/img/favorite.png" alt="favorite" onmouseover="this.src='/group1/components/header/static/img/favorite_black.png'" onmouseout="this.src='/group1/components/header/static/img/favorite.png'">
+                    </a>
+
+                    <div class="form-popup" id="myForm">
+                        <form class="form-container" action="/todo" method="signIn">
+                            <h2>הרשמה</h2>   
+                            <label class="lable" for="email"><b>אימייל</b></label>
+                            <input type="text" placeholder="הכנס אימייל" name="email" id="email" required>
+                            <label class="lable" for="psw"><b>סיסמה</b></label>
+                            <input type="password" placeholder="הכנס סיסמה" name="psw" id="psw" required>
+                            <button type="submit" class="btn">היכנס</button>
+                            <p><span>או</span></p>
+                            <button type="button" class="btn signup" onclick="location.href='/group1/pages/register/templates/register.html'">להרשמה</button>
+                            <button type="button" class="btn cancel" onclick="closeLoginForm()">ביטול</button>                      
+                        </form>
+                    </div>
+                </div>
+
+
+                <h1>B-MINE</h1>
+                <h3>BUY MY STYLE</h3>
+                
+                <nav>
+                    <div class="nav-bar">
+                        <a class="option" href="/group1/pages/home_page/templates/home_page.html">דף הבית</a>
+
+                        <a class="option" href="/group1/pages/contact us/templates/contact_us.html" >צור קשר</a>
+
+                        <a class="option" href="/group1/pages/who we are/templates/who_we_are.html">מי אנחנו</a>
+
+                        <div class="dropdown option">
+                            <p class="option">עוד</p>
+                            <i class="arrowDown"></i>
+                            <div class="dropdown-content">
+                                <a href="/group1/pages/qa/templates/qa.html">שאלות נפוצות</a>
+                                <a href="/group1/pages/terms_of_use/templates/terms_of_use.html">תקנון</a>
+                                <a href="/group1/pages/Excange_Return/templates/exchange_returns.html">החלפות והחזרות</a>
+                            </div>
+                        </div>
+                        
+                        <a class="option" href="/group1/pages/events/templates/events.html">אירועים</a>
+                        <a class="option" href="/group1/pages/sale/templates/sale.html">פריטי חיסול</a>
+
+                    </div>
+                    <hr>
+                </nav>
+            </div>
+        </header>
+        <main>
+          
+            <div class="slideshow-container">
+                <div class="title"><div class="bg-text">פריטי חיסול</div></div>
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> הראה הכל</button>
+                    <button class="btn" onclick="filterSelection('60-100')"> 60-100</button>
+                    <button class="btn" onclick="filterSelection('100-180')"> 100-180</button>
+                    <button class="btn" onclick="filterSelection('מעל 200')"> מעל 180</button>
+                    
+                </div>
+
+
+                <div class="container">
+                    <div class="mySlides" >
+                        <div class="sales1">
+                            <div class="filterDiv 100-180">
+                            <span class="bag-image">
+                                <a  href="/group1/pages/products/templates/product_michal1.html"><img src="/group1/pages/sale/static/img/Capture.JPG" alt="shirt" >    
+                            </span><a  class="desc">חולצת ג'ינס מכופתרת <br><del>180 ש"ח</del>  &nbsp  <ins>110 ש"ח</ins> </a>
+                            </div>
+                        </div>
+                        <div class="sales1">
+                            <div class="filterDiv 100-180">
+                            <span class="bag-image">
+                                <a  href="/group1/pages/products/templates/product_michal1.html"><img src="/group1/pages/sale/static/img/מעיל.JPG" alt="מעיל כאמל" >
+                            </span><a  class="desc">עליונית קז'ואל בצבע קאמל  <br><del>280 ש"ח</del>  &nbsp  <ins>150 ש"ח</ins> </a>
+                            </div>
+                        </div>
+                        <div class="sales1">
+                            <div class="filterDiv 60-100">
+                                <a  href="/group1/pages/products/templates/product_michal1.html"><img src="/group1/pages/sale/static/img/סוודר.JPG" alt="סוודר" >
+                                <a  class="desc">אפודה סריגית בצבע בז <br> 90 ש"ח</a>
+                            </div>
+                        </div>
+
+                        <div class="sales1">
+                            <div class="filterDiv מעל 180">
+                            <span class="bag-image">
+                                <a  href="/group1/pages/products/templates/product_michal1.html"><img src="/group1/pages/sale/static/img/דר מרטינס.JPG" alt="דר מרטינס"></a>
+                            </span><a  class="desc">מגפי ד"ר מרטינס <br><del> ש"ח 900</del>  &nbsp  <ins>690 ש"ח</ins> </a>
+                            </div>
+                        </div>
+
+                        <div class="sales1">
+                            <a  href="/group1/pages/products/templates/product_michal1.html"><img src="/group1/pages/sale/static/img/גולף.JPG" alt="חולצת גולף" >
+                                <a  class="desc">חולצת גולף שחורה <br>75 ש"ח </a>
+                        </div>
+
+                        <div class="sales1">
+                            <span class="bag-image">
+                            <a  href="/group1/pages/products/templates/product_michal1.html"><img src="/group1/pages/sale/static/img/תיק גב קאמל.JPG" alt="תיק גב קאמל" ></a>
+                            </span><a  class="desc">תיק גב מעור <br><del>350 ש"ח</del>  &nbsp  <ins>210 ש"ח</ins> </a>
+                        </div>   
+
+
+                        <div class="sales1">
+                            <a  href="/group1/pages/products/templates/product_michal1.html"><img src="/group1/pages/sale/static/img/מנומרת.JPG" alt="חולצת בטן מנומרת" >
+                            <a  class="desc">חולצת בטן מנומרת<br>55 ש"ח </a>
+                        </div>   
+
+                        <div class="sales1">
+                            <a  href="/group1/pages/products/templates/product_michal1.html"><img src="/group1/pages/sale/static/img/חולצה גדולה.JPG" alt="חולצה אוברסייז" >
+                            <a  class="desc">חולצה אוברסייז לוס אנג'לס <br>110 ש"ח</a>
+                        </div>  
+
+                        <div class="sales1">
+                            <a  href="/group1/pages/products/templates/product_michal1.html"><img src="/group1/pages/sale/static/img/חולצה ורודה.JPG" alt="חולצה מכופתרת ורודה" >
+                            <a  class="desc"> GAP - חולצה מכופתרת ורודה <br>170 ש"ח </a>
+                        </div>  
+
+                    </div>
+                </div>   
+
+                <div class="container">
+                    <div class="mySlides" style="display: none;">
+                   
+                        <div class="sales1">
+                            <span class="bag-image">
+                                <a  href="/group1/pages/products/templates/product_michal1.html"><img src="/group1/pages/sale/static/img/מגפיים שרוכים.JPG" alt="מגף עם שרוכים" >
+                                <a  class="desc">מגפים שרוכים שחורים <br><del>90 ש"ח</del>  &nbsp  <ins>60 ש"ח</ins> </a>
+                            </span></div>
+
+                        <div class="sales1">
+                            <a  href="/group1/pages/products/templates/product_michal1.html"><img src="/group1/pages/sale/static/img/מייקל קורס תיק.JPG" alt="תיק מייקל קורס" >
+                            <a  class="desc">תיק MICHAEL KORS <br>250 ש"ח </a>
+                                </div>
+
+                        <div class="sales1">
+                            <a  href="/group1/pages/products/templates/product_michal1.html"><img src="/group1/pages/sale/static/img/גינס סקיני[.JPG" alt="ג'ינס גזרת סקיני" >
+                            <a  class="desc">ג'ינס סקיני ג'יימי - טופשופ <br>130 ש"ח</a>
+                                </div>
+
+                        <div class="sales1">
+                            <a  href="/group1/pages/products/templates/product_michal1.html"><img src="/group1/pages/sale/static/img/גינס גזרת mom.JPG" alt="MOM ג'ינס גזרת" >
+                            <a  class="desc">ג'ינס גזרת MOM <br>130 ש"ח</a>
+                                </div>
+
+                        <div class="sales1">
+                            <span class="bag-image">
+                            <a  href="/group1/pages/products/templates/product_michal1.html"> <img src="/group1/pages/sale/static/img/שמלה ורודה בוהו.JPG" alt="שמלה ורודה גזרת בוהו" >
+                            <a  class="desc">שמלה ורודה בסגנון בוהו <br><del>220 ש"ח</del>  &nbsp  <ins>145 ש"ח</ins> </a>
+                            </span> </div>
+                        </div>
+                    </div>
+                </div> 
+                <div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="links">
+                <div class="footer-part">
+                    <a class="op" href="/group1/pages/qa/templates/qa.html">שאלות נפוצות</a>
+                    <a class="op" href="/group1/pages/contact us/templates/contact_us.html">צור קשר</a>
+                    <a class="op" href="/group1/pages/terms_of_use/templates/terms_of_use.html">תקנון</a>
+                </div>
+
+                <div class="footer-part">
+                    <a class="op" href="/group1/pages/who we are/templates/who_we_are.html">מי אנחנו</a>
+                    <p class="Ftitle">אמצעי תשלום</p>
+                    <img class="payment" src="/group1/components/footer/static/img/paypal.png" alt="paypal"/>
+                    <img class="payment" src="/group1/components/footer/static/img/mastercard.png" alt="mastercard"/>
+                    <img class="payment" src="/group1/components/footer/static/img/visa.png" alt="visa"/>
+                    <img class="payment" src="/group1/components/footer/static/img/american-express.png" alt="american-express"/>
+                </div>
+
+                <div class="footer-part">
+                    <p class="Ftitle">שירות לקוחות</p>
+                    <div class="contactDetails">
+                        <a class="op" href="tel:054-6798654">054-6798654</a>
+                        <a class="op" href="mailto:bmine@gmail.com">bmine@gmail.com</a> 
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
+    

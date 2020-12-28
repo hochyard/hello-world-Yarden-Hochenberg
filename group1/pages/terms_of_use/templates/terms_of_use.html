@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>תקנון</title>
+        <link rel="stylesheet" href="/group1/components/header/static/css/header.css">
+        <link rel="stylesheet" href="/group1/pages/terms_of_use/static/css/terms_of_use.css">
+        <link rel="stylesheet" href="/group1/components/footer/static/css/footer.css">  
+        <link rel="stylesheet" href="/group1/components/photo_title/static/css/photo_title.css">  
+        <script src="/group1/components/header/static/js/header.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header_container">
+                <div class="top-nav">
+                    <a href="/group1/pages/cart/templates/cart.html">
+                        <img src="/group1/components/header/static/img/shopping-bag.png" alt="cart" style="margin-right: 20px;">
+                    </a>
+                    <button class="open-button" onclick="openLoginForm()">
+                        <img src="/group1/components/header/static/img/user.png" alt="login" >
+                    </button>
+                    
+                    <a href="/group1/pages/favorites/templates/favorites.html">
+                        <img src="/group1/components/header/static/img/favorite.png" alt="favorite" onmouseover="this.src='/group1/components/header/static/img/favorite_black.png'" onmouseout="this.src='/group1/components/header/static/img/favorite.png'">
+                    </a>
+
+                    <div class="form-popup" id="myForm">
+                        <form class="form-container" action="/todo" method="signIn">
+                            <h2>הרשמה</h2>   
+                            <label class="lable" for="email"><b>אימייל</b></label>
+                            <input type="text" placeholder="הכנס אימייל" name="email" id="email" required>
+                            <label class="lable" for="psw"><b>סיסמה</b></label>
+                            <input type="password" placeholder="הכנס סיסמה" name="psw" id="psw" required>
+                            <button type="submit" class="btn">היכנס</button>
+                            <p><span>או</span></p>
+                            <button type="button" class="btn signup" onclick="location.href='/group1/pages/register/templates/register.html'">להרשמה</button>
+                            <button type="button" class="btn cancel" onclick="closeLoginForm()">ביטול</button>                      
+                        </form>
+                    </div>
+                </div>
+
+
+                <h1>B-MINE</h1>
+                <h3>BUY MY STYLE</h3>
+                
+                <nav>
+                    <div class="nav-bar">
+                        <a class="option" href="/group1/pages/home_page/templates/home_page.html">דף הבית</a>
+
+                        <a class="option" href="/group1/pages/contact us/templates/contact_us.html" >צור קשר</a>
+
+                        <a class="option" href="/group1/pages/who we are/templates/who_we_are.html">מי אנחנו</a>
+
+                        <div class="dropdown option">
+                            <i class="arrowDown"></i>
+                            <p class="option">עוד</p>
+                            <div class="dropdown-content">
+                                <a href="/group1/pages/qa/templates/qa.html">שאלות נפוצות</a>
+                                <a href="/group1/pages/terms_of_use/templates/terms_of_use.html">תקנון</a>
+                                <a href="/group1/pages/Excange_Return/templates/exchange_returns.html">החלפות והחזרות</a>
+                            </div>
+                        </div>
+                        
+                        <a class="option" href="/group1/pages/events/templates/events.html">אירועים</a>
+                        <a class="option" href="/group1/pages/sale/templates/sale.html">פריטי חיסול</a>
+
+                    </div>
+                    <hr>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="title"><div class="bg-text">תקנון</div></div>
+                <section class="field">
+                    <h2>כללי</h2>
+                    <section class="content">
+                        <p>.יש לקרוא תקנון זה במלואו טרם ביצוע הזמנה מהאתר</p>
+                        <p>.האתר משמש כחנות וירטואלית למכירת בגדי יד שניה מהארץ ומחו”ל</p>
+                        <p>.בכל מקום המופיע בתקנון זה לשון נקבה, הכוונה הינה לגברים ונשים כאחד. לשון יחיד משמע גם לשון רבים, ולהיפך</p>
+                        <p>המידע באתר, הכולל תמונות, חומר כתוב, וידאו קליפים, לוגו, איורים וחומרים אחרים שייכים להנהלת האתר בלבד ואין</p>
+                        <p>.להעתיקו, לפרסמו, להציגו ו/או להשתמש בו. בשום אופן ללא אישור מהנהלת האתר במפורש ובכתב</p>
+                        <p>.תקנון זה מסדיר את אופן שימוש באתר למטרת רכישה ו/או הזמנה כאמור, לכל משתמש או גולש באתר</p>
+                        <p>השימוש בשירות כפוף לתנאי התקנון שלהלן, כפי שיופיעו מעת לעת. האחריות המלאה להכרת התנאים להלן והשימוש </p>
+                        <p>.בשירות על פי תנאים אלו חלה בכל עת על המשתמש בלבד</p>
+                        <p> חשוב להקפיד ולעיין בתקנון מאחר והשימוש בשירות מעיד על הסכמת המשתמש לתנאי התקנון המפורטים להלן</p>
+                        <p>הנהלת האתר אינה מחויבת במתן הודעה מוקדמת במידה וישנו צורך לעדכן ו/או לשנות את התקנון </p>
+                        <p>.מעת לעת וכל זאת על פי שיקול דעתה הבלעדי של הנהלת האתר כאמור לעיל</p>
+                        <p>.הפריטים המוצגים באתר כוללים מע”מ על פי חוק</p>
+                    </section>
+                </section>
+                <section class="field">
+                    <h2>מוצרים</h2>
+                    <section class="content">
+                        <p>.הפריטים המוצגים באתר הם פריטי יד שניה משומשים שהיו שייכים לאנשים אחרים ונלבשו או ננעלו</p>
+                        <p>.לא ניקח אחריות לגבי סוליות משומשות של נעליים לאחר קנייה</p>
+                        <p>מאחר וצילום המוצרים והפריטים המוצגים באתר נועדו להמחשה בלבד, עקב כך יכול להיות הבדל בין המוצג לבין תחושת יד</p>
+                        <p>.ולכן מומלץ לקרוא את כל הפרטים המזהים לפני הרכישה</p>
+                        <p>,עדכון המוצרים מתבצע באופן שוטף, למרות זאת יתכן כי מי מהפריטים אשר נמכר עדיין לא הורד מהמערכת מסיבה כלשהיא</p>
+                        <p>.הנהלת האתר תעניק את הפריט ללקוח הראשון שהזמין</p>
+                        <p>.כל הפריטים המוצגים באתר הינם ייחודיים ולכן אין הנהלת האתר מחזיקה מלאי כלשהוא, חלקי או מלא</p>
+                        <p>,הנהלת האתר עושה את כל המאמצים על מנת לוודא שהמידע המוצג באתר יהיה המידע השלם והמדויק ביותר</p>
+                        <p>.אולם יתכן והמידע אינו שלם ולחליפין יתכן ונפלו טעויות טכניות או אחרות במידע המוצג</p>
+                        <p>.מובהר בזאת כי הנהלת האתר אינה אחראית לאי דיוקים ו/או לטעויות שנפלו ביחס למידע המוצג</p>
+                        <p>.הנהלת האתר רשאית לעדכן את מחירי הפריטים המוצגים באתר מעת לעת ובלא צורך בהודעה מוקדמת</p>
+                    </section>
+                </section>
+                <section class="field">
+                    <h2>רכישות</h2>
+                    <section class="content">
+                        <p>.במידה ובעת ביצוע ההזמנה יימסרו פרטים שגויים, הנהלת האתר לא תוכל לקחת אחריות על פריטים שלא הגיעו ליעדם</p>
+                        <p>.הנהלת האתר לא תעשה בפרטי הלקוחה כל שימוש, אלא בהתאם למטרות המפורטות בתנאי התקנון של האתר</p>
+                        <p>.ניתן לשלם בכרטיסי אשראי של ויזה, אמריקן-אקספרס מסטרקארד ופייפאל</p>
+                    </section>
+                </section>
+                <section class="field">
+                    <h2>החזרה והחלפת פריטים</h2>
+                    <section class="content">
+                        <p>בכפוף לאמור בחוק הגנת הצרכן התשמ”א 1981</p>
+                        <p>.זיכוי או החלפה לפריט אשר יוחזר תוך 14 יום מיום קבלתו</p>
+                        <p>.זיכוי או החלפה תוענק בהצגת אישור תשלום, ויש לצרפו למשלוח החוזר</p>
+                        <p>לאחר שהפריט יגיע חזרה אל המוכרת, הוא ייבדק, ובמידה ויעמוד בתנאי ההחזרה / החלפה, יקבל הלקוח זיכוי כספי</p>
+                        <p>.או פריט אחר כפי שנבחר</p>
+                        <p>.הזיכוי יוענק באותו סכום הקניה לאחר הורדת דמי המשלוח במידה והיו, לאותו כרטיס אשראי בלבד שאיתו שולם</p>
+                        <p>.זיכוי או החלפה לא יוענקו במידה והפריט יוחזר פגום ו/או עם ריח של סיגריות, בושם או שערות של כלבים וחתולים</p>
+                        <p>.מובהר בזאת כי הנהלת האתר תהא בעלת שיקול הדעת הבלעדית בהגדרת מצבו של הפריט המוחזר</p>
+                        <p>בעת החזרת פריט, הלקוח מתחייב לשלוח את הפריט ו/או הפריטים בדואר רשום. הנהלת האתר אינה אחראית להשיב</p>
+                        <p>.סכום כלשהוא במידה והפריט אבד בדרכו</p>
+                    </section>
+                </section>
+                <section class="field">
+                    <h2>סמכויות שיפוט</h2>
+                    <section class="content" style="margin-bottom: 40px;">
+                        .התקנון המופיע הינו בכפוף לחוקי מדינת ישראל, כל חילוקי הדעות יובאו בפני בית המשפט המוסמך לכך בתל אביב
+                    </section>
+                </section>  
+            </div>
+            
+        </main>
+        <footer>
+            <div class="links">
+                <div class="footer-part">
+                    <a class="op" href="/group1/pages/qa/templates/qa.html">שאלות נפוצות</a>
+                    <a class="op" href="/group1/pages/contact us/templates/contact_us.html">צור קשר</a>
+                    <a class="op" href="/group1/pages/terms_of_use/templates/terms_of_use.html">תקנון</a>
+                </div>
+
+                <div class="footer-part">
+                    <a class="op" href="/group1/pages/who we are/templates/who_we_are.html">מי אנחנו</a>
+                    <p class="Ftitle">אמצעי תשלום</p>
+                    <img class="payment" src="/group1/components/footer/static/img/paypal.png" alt="paypal"/>
+                    <img class="payment" src="/group1/components/footer/static/img/mastercard.png" alt="mastercard"/>
+                    <img class="payment" src="/group1/components/footer/static/img/visa.png" alt="visa"/>
+                    <img class="payment" src="/group1/components/footer/static/img/american-express.png" alt="american-express"/>
+                </div>
+
+                <div class="footer-part">
+                    <p class="Ftitle">שירות לקוחות</p>
+                    <div class="contactDetails">
+                        <a class="op" href="tel:054-6798654">054-6798654</a>
+                        <a class="op" href="mailto:bmine@gmail.com">bmine@gmail.com</a> 
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

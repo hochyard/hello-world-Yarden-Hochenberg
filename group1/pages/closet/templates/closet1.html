@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+      <title>הארון של..</title>
+
+        <!-- להחליף שמות-->
+    
+      <meta charset="UTF-8">
+      <meta name="author" content="group 1">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+      <link rel="stylesheet" href="/group1/pages/closet/static/css/closet1.css">
+      <link rel="stylesheet" href="/group1/components/header/static/css/header.css">
+      <link rel="stylesheet" href="/group1/components/footer/static/css/footer.css">
+      <script src="/group1/components/header/static/js/header.js"></script>
+      <script src="/group1/pages/closet/static/js/closet.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <div class="header_container">
+          <div class="top-nav">
+              <a href="/group1/pages/cart/templates/cart.html">
+                  <img src="/group1/components/header/static/img/shopping-bag.png" alt="cart" style="margin-right: 20px;">
+              </a>
+              <button class="open-button" onclick="openLoginForm()">
+                  <img src="/group1/components/header/static/img/user.png" alt="login" >
+              </button>
+              
+              <a href="/group1/pages/favorites/templates/favorites.html">
+                  <img src="/group1/components/header/static/img/favorite.png" alt="favorite" onmouseover="this.src='/group1/components/header/static/img/favorite_black.png'" onmouseout="this.src='/group1/components/header/static/img/favorite.png'">
+              </a>
+
+              <div class="form-popup" id="myForm">
+                  <form class="form-container" action="/todo" method="signIn">
+                      <h2>הרשמה</h2>   
+                      <label class="lable" for="email"><b>אימייל</b></label>
+                      <input type="text" placeholder="הכנס אימייל" name="email" id="email" required>
+                      <label class="lable" for="psw"><b>סיסמה</b></label>
+                      <input type="password" placeholder="הכנס סיסמה" name="psw" id="psw" required>
+                      <button type="submit" class="btn">היכנס</button>
+                      <p><span>או</span></p>
+                      <button type="button" class="btn signup" onclick="location.href='/group1/pages/register/templates/register.html'">להרשמה</button>
+                      <button type="button" class="btn cancel" onclick="closeLoginForm()">ביטול</button>                      
+                  </form>
+              </div>
+          </div>
+
+
+          <h1>B-MINE</h1>
+          <h3>BUY MY STYLE</h3>
+          
+          <nav>
+              <div class="nav-bar">
+                  <a class="option" href="/group1/pages/home_page/templates/home_page.html">דף הבית</a>
+
+                  <a class="option" href="/group1/pages/contact us/templates/contact_us.html" >צור קשר</a>
+
+                  <a class="option" href="/group1/pages/who we are/templates/who_we_are.html">מי אנחנו</a>
+
+                  <div class="dropdown option">
+                      <p class="option">עוד</p>
+                      <i class="arrowDown"></i>
+                      <div class="dropdown-content">
+                          <a href="/group1/pages/qa/templates/qa.html">שאלות נפוצות</a>
+                          <a href="/group1/pages/terms_of_use/templates/terms_of_use.html">תקנון</a>
+                          <a href="/group1/pages/Excang_Return/templates/exchange_returns.html">החלפות והחזרות</a>
+                      </div>
+                  </div>
+                  
+                  <a class="option" href="/group1/pages/events/templates/events.html">אירועים</a>
+                  <a class="option" href="/group1/pages/sale/templates/sale.html">פריטי חיסול</a>
+
+              </div>
+              <hr>
+          </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="headpic">
+        <img src="/group1/pages/closet/static/img/michal.jpeg" alt="Michal Levy"  ><br>
+        <a  class="desc" > <b> Michal Levy's Closet</b> </a>
+        <div class=" aboutme">
+          היי אהובות.
+          <br>
+          מזמינה אותכן להנות מפריטים שווים במחירים עוד יותר שווים
+        <br>
+          זמינה אליכן לכל שאלה למטה אז תרגישו חופשי לפנות! 
+        </div>
+      </div>
+      <br>
+      <div class="big-container">
+          <div class="container">
+            <div class="closet1">
+              <div class="hi">
+                <img class="like" src="/group1/pages/closet/static/img/favorite.png" alt="like" onclick="this.src='/group1/pages/closet/static/img/favorite_black.png'; addMesage()">
+                <a href="/group1/pages/products/templates/product_michal1.html">
+                <img class="mainPic" src="/group1/pages/closet/static/img/black.jpg" alt="black"></a>
+              </div>
+              <p  class="desc">אוברול שחור &nbsp 100 ש"ח </p>  
+            </div>
+            <div class="closet1">
+              <div class="hi">
+                <img class="like" src="/group1/pages/closet/static/img/favorite.png" alt="like" onclick="this.src='/group1/pages/closet/static/img/favorite_black.png'; addMesage()">
+                <a href="/group1/pages/products/templates/product_michal2.html">
+                <img class="mainPic" src="/group1/pages/closet/static/img/shoes.jpg" alt="shoes" > </a>
+              </div>
+              <p  class="desc" >נעלי עקב ברונזה&nbsp  60 ש"ח </p>  
+            </div>
+            <div class="closet1">
+              <div class="hi">
+                <img class="like" src="/group1/pages/closet/static/img/favorite.png" alt="like" onclick="this.src='/group1/pages/closet/static/img/favorite_black.png' ; addMesage()">
+                <a href="/group1/pages/products/templates/product_michal3.html">
+                <img class="mainPic" src="/group1/pages/closet/static/img/jacket.jpg" alt="jacket" > </a>
+              </div>
+              <p  class="desc" >גקט משבצות &nbsp 80 ש"ח </p>
+            </div>
+          </div>
+              
+          <div class="container2">
+              <div class="description">
+                <br>
+                <b>צור קשר עם המוכרת</b>
+                </div>
+                  <form class="info" action="/todo" method="conatac_saler">
+                      <div class="detail">
+                          <input class="input-info" type="text" id="fname" name="firstname" placeholder="השם שלך..">
+                      </div>
+                      <div class="detail">
+                          <br>
+                          <input class="input-info" type="text" id="lname" name="lastname" placeholder="אימיל..." required>
+                      </div>
+                      <div class="detail ">
+                          <br>
+                          <input class="input-info" type="email" id="e-mail" name="e-mail" placeholder="מספר הטלפון שלך..." required>
+                      </div>
+                      <div class="detail">
+                          <br>
+                          <textarea class="input-info" name="comment" id="comment" rows="10" placeholder="תגובה.." ></textarea>
+                      </div>
+                      
+                          <button class="button-submit" type="submit" >שלח תגובה</button>
+                  
+                  </form>
+              </div>
+          </div>
+      </main>
+      <footer>
+          <div class="links">
+              <div class="footer-part">
+                  <a class="op" href="/group1/pages/qa/templates/qa.html">שאלות נפוצות</a>
+                  <a class="op" href="/group1/pages/contact us/templates/contact_us.html">צור קשר</a>
+                  <a class="op" href="/group1/pages/terms_of_use/templates/terms_of_use.html">תקנון</a>
+              </div>
+
+              <div class="footer-part">
+                  <a class="op" href="/group1/pages/who we are/templates/who_we_are.html">מי אנחנו</a>
+                  <p class="Ftitle">אמצעי תשלום</p>
+                  <img class="payment" src="/group1/components/footer/static/img/paypal.png" alt="paypal"/>
+                  <img class="payment" src="/group1/components/footer/static/img/mastercard.png" alt="mastercard"/>
+                  <img class="payment" src="/group1/components/footer/static/img/visa.png" alt="visa"/>
+                  <img class="payment" src="/group1/components/footer/static/img/american-express.png" alt="american-express"/>
+              </div>
+
+              <div class="footer-part">
+                  <p class="Ftitle">שירות לקוחות</p>
+                  <div class="contactDetails">
+                      <a class="op" href="tel:054-6798654">054-6798654</a>
+                      <a class="op" href="mailto:bmine@gmail.com">bmine@gmail.com</a> 
+                  </div>
+              </div>
+          </div>
+      </footer>
+  </body>
+</html>

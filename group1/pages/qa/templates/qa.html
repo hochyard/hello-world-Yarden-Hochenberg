@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>שאלות נפוצות</title>
+        <link rel="stylesheet" href="/group1/components/header/static/css/header.css">
+        <link rel="stylesheet" href="/group1/pages/qa/static/css/qa.css">
+        <link rel="stylesheet" href="/group1/components/footer/static/css/footer.css">
+        <link rel="stylesheet" href="/group1/components/photo_title/static/css/photo_title.css">
+        <script src="/group1/components/header/static/js/header.js"></script>
+        <script src="/group1/pages/qa/static/js/qa.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <div class="header_container">
+                <div class="top-nav">
+                    <a href="/group1/pages/cart/templates/cart.html">
+                        <img src="/group1/components/header/static/img/shopping-bag.png" alt="cart" style="margin-right: 20px;">
+                    </a>
+                    <button class="open-button" onclick="openLoginForm()">
+                        <img src="/group1/components/header/static/img/user.png" alt="login" >
+                    </button>
+                    
+                    <a href="/group1/pages/favorites/templates/favorites.html">
+                        <img src="/group1/components/header/static/img/favorite.png" alt="favorite" onmouseover="this.src='/group1/components/header/static/img/favorite_black.png'" onmouseout="this.src='/group1/components/header/static/img/favorite.png'">
+                    </a>
+
+                    <div class="form-popup" id="myForm">
+                        <form class="form-container" action="/todo" method="signIn">
+                            <h2>הרשמה</h2>   
+                            <label class="lable" for="email"><b>אימייל</b></label>
+                            <input type="text" placeholder="הכנס אימייל" name="email" id="email" required>
+                            <label class="lable" for="psw"><b>סיסמה</b></label>
+                            <input type="password" placeholder="הכנס סיסמה" name="psw" id="psw" required>
+                            <button type="submit" class="btn">היכנס</button>
+                            <p><span>או</span></p>
+                            <button type="button" class="btn signup" onclick="location.href='/group1/pages/register/templates/register.html'">להרשמה</button>
+                            <button type="button" class="btn cancel" onclick="closeLoginForm()">ביטול</button>                      
+                        </form>
+                    </div>
+                </div>
+
+
+                <h1>B-MINE</h1>
+                <h3>BUY MY STYLE</h3>
+                
+                <nav>
+                    <div class="nav-bar">
+                        <a class="option" href="/group1/pages/home_page/templates/home_page.html">דף הבית</a>
+
+                        <a class="option" href="/group1/pages/contact us/templates/contact_us.html" >צור קשר</a>
+
+                        <a class="option" href="/group1/pages/who we are/templates/who_we_are.html">מי אנחנו</a>
+
+                        <div class="dropdown option">
+                            <i class="arrowDown"></i>
+                            <p class="option">עוד</p>
+                            <div class="dropdown-content">
+                                <a href="/group1/pages/qa/templates/qa.html">שאלות נפוצות</a>
+                                <a href="/group1/pages/terms_of_use/templates/terms_of_use.html">תקנון</a>
+                                <a href="/group1/pages/Excange_Return/templates/exchange_returns.html">החלפות והחזרות</a>
+                            </div>
+                        </div>
+                        
+                        <a class="option" href="/group1/pages/events/templates/events.html">אירועים</a>
+                        <a class="option" href="/group1/pages/sale/templates/sale.html">פריטי חיסול</a>
+
+                    </div>
+                    <hr>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="title"><div class="bg-text">שאלות נפוצות ותשובות</div></div>
+                <button class="accordion" onclick="openContent()">
+                    ?האם ניתן לשלם במזומן באתר
+                    <img src="/group1/pages/qa/static/img/question-mark.png" alt="cart">
+                </button>
+                <div class="panel">
+                    <br>
+                    <p>.לא ניתן לשלם במזומן. יש לך אפשרות לשלם בכרטיס אשראי ודרך חשבון פייפל</p>
+                </div>
+    
+                <button class="accordion" onclick="openContent()">
+                    הזמנתי פריט וברצוני להחזיר או להחליף אותו
+                    <img src="/group1/pages/qa/static/img/question-mark.png" alt="cart">
+                </button>
+                <div class="panel">
+                    <br>
+                    <p>.בכפוף לאמור בחוק הגנת הצרכן התשמ”א 1981</p>
+                    <p>.זיכוי או החלפה לפריט אשר יוחזר תוך 14 יום מיום קבלתו</p>
+                    <p>.זיכוי או החלפה תוענק בהצגת אישור תשלום, ויש לצרפו למשלוח החוזר<p>
+                    <p>לאחר שהפריט יגיע חזרה אל המוכרת, הוא ייבדק, ובמידה ויעמוד בתנאי ההחזרה / החלפה, יקבל הלקוח זיכוי כספי או</p>
+                    <p>.פריט אחר כפי שנבחר</p>
+                    <p>.הזיכוי יוענק באותו סכום הקניה לאחר הורדת דמי המשלוח במידה והיו, לאותו כרטיס אשראי בלבד שאיתו שולם<p>
+                    <p>.זיכוי או החלפה לא יוענקו במידה והפריט יוחזר פגום ו/או עם ריח של סיגריות, בושם או שערות של כלבים וחתולים<p>
+                    <p>.מובהר בזאת כי הנהלת האתר תהא בעלת שיקול הדעת הבלעדית בהגדרת מצבו של הפריט המוחזר<p>
+                    <p>בעת החזרת פריט, הלקוח מתחייב לשלוח את הפריט ו/או הפריטים בדואר רשום. הנהלת האתר אינה אחראית להשיב סכום כלשהו<p>
+                    <p>.במידה והפריט אבד בדרכו</p>
+                </div>
+
+                <button class="accordion" onclick="openContent()">
+                    ?מהן עלויות המשלוח
+                    <img src="/group1/pages/qa/static/img/question-mark.png" alt="cart">
+                </button>
+                <div class="panel">
+                    <br>
+                    <p>.משלוחים חינם לכל הארץ בקנייה מעל 199 ש”ח</p>
+                    <p>.בקניה במחיר נמוך יותר, עלות המשלוח תיהיה 20 ש"ח</p>
+                </div>
+
+                <button class="accordion" onclick="openContent()">
+                    ?ביצעתי הזמנה ואני רוצה להחליף את כתובת המשלוח. מה עלי לעשות
+                    <img src="/group1/pages/qa/static/img/question-mark.png" alt="cart">
+                </button>
+                <div class="panel">
+                    <br>
+                    <p>.bmine@gmail.com :במידה וההזמנה עוד לא יצאה מבית המוכרת, צרי איתנו קשר ונשמח לעזור</p>
+                </div>
+    
+                <button class="accordion" onclick="openContent()">
+                    ?איך אפשר ליצור קשר עם המוכרת
+                    <img src="/group1/pages/qa/static/img/question-mark.png" alt="cart">
+                </button>
+                <div class="panel">
+                    <br>
+                    <p>.בכל ארון בגדים, מתחת לפריטים של המוכרת ישנו טופס צור קשר עם המוכרת</p>
+                </div>
+
+                <button class="accordion" onclick="openContent()">
+                    ?האמת ניתן להשכיר פריטים
+                    <img src="/group1/pages/qa/static/img/question-mark.png" alt="cart">
+                </button>
+                <div class="panel">
+                    <br>
+                    <p>.לא. הפריטים למכירה בלבד</p>
+                </div>
+
+                <button class="accordion" onclick="openContent()">
+                    ?האם ניתן לפתוח ארון בגדים באתר שלכם
+                    <img src="/group1/pages/qa/static/img/question-mark.png" alt="cart">
+                </button>
+                <div class="panel">
+                    <br>
+                    <p>.bmine@gmail.com כן! אם ברצונך להצטרף אלינו למכירה אנא צרי איתנו קשר דרך במייל</p>
+                </div>
+
+                <button class="accordion" onclick="openContent()">
+                    ?אפשר לשלוח בגדים לחו"ל
+                    <img src="/group1/pages/qa/static/img/question-mark.png" alt="cart">
+                </button>
+                <div class="panel">
+                    <br>
+                    <p> כן , במידה ואת גרה בחו"ל ורוצה לקנות מהאתר שלנו, צרי איתנו קשר דרך המייל לפני </p>
+                    <p>.bmine@gmail.com ביצוע ההזמנה ונעזור לך בתהליך</p>
+                </div>
+
+                <button class="accordion" onclick="openContent()">
+                    ?איך אורזים את המשלוח ללקוחה
+                    <img src="/group1/pages/qa/static/img/question-mark.png" alt="cart">
+                </button>
+                <div class="panel">
+                    <br>
+                    <p>ממש בקרוב האתר יציע חבילות אריזה לרכישה , עד אז תהיי יצירתית, השתמשי באריזות ושקיות ישנות שיש לך בבית</p>
+                    <p>.יש שקיות ב1 ש"ח ברשת החנויות מקס סטוק וגם בחברת דואר ישראל מציעים למכור מעטפות ואריזות</p>
+                </div>
+
+                <button class="accordion" onclick="openContent()">
+                    ?האם ניתן לבצע איסוף עצמי של ההזמנה
+                    <img src="/group1/pages/qa/static/img/question-mark.png" alt="cart">
+                </button>
+                <div class="panel">
+                    <br>
+                    <p>.לא. כרגע ניתן לקבל את ההזמנה רק ע"י משלוח לבית הלקוחה</p>
+                </div>
+                
+                <p id="finish">!אם יש לכם עוד שאלות, אתם מוזמנים <a class="option" href="/group1/pages/contact us/templates/contact_us.html">ליצור איתנו קשר</a> ונענה לכם בהקדם</p>
+            </div>
+
+        </main>
+        <footer>
+            <div class="links">
+                <div class="footer-part">
+                    <a class="op" href="/group1/pages/qa/templates/qa.html">שאלות נפוצות</a>
+                    <a class="op" href="/group1/pages/contact us/templates/contact_us.html">צור קשר</a>
+                    <a class="op" href="/group1/pages/terms_of_use/templates/terms_of_use.html">תקנון</a>
+                </div>
+
+                <div class="footer-part">
+                    <a class="op" href="/group1/pages/who we are/templates/who_we_are.html">מי אנחנו</a>
+                    <p class="Ftitle">אמצעי תשלום</p>
+                    <img class="payment" src="/group1/components/footer/static/img/paypal.png" alt="paypal"/>
+                    <img class="payment" src="/group1/components/footer/static/img/mastercard.png" alt="mastercard"/>
+                    <img class="payment" src="/group1/components/footer/static/img/visa.png" alt="visa"/>
+                    <img class="payment" src="/group1/components/footer/static/img/american-express.png" alt="american-express"/>
+                </div>
+
+                <div class="footer-part">
+                    <p class="Ftitle">שירות לקוחות</p>
+                    <div class="contactDetails">
+                        <a class="op" href="tel:054-6798654">054-6798654</a>
+                        <a class="op" href="mailto:bmine@gmail.com">bmine@gmail.com</a> 
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

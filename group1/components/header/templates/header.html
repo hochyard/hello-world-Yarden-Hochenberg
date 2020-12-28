@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>header</title>
+        <link rel="stylesheet" href="/group1/components/header/static/css/header.css">
+        <script src="/group1/components/header/static/js/header.js"></script>
+    </head>
+    <body> 
+        <header>
+            <div class="header_container">
+                <div class="top-nav">
+                    <a href="/group1/pages/cart/templates/cart.html">
+                        <img src="/group1/components/header/static/img/shopping-bag.png" alt="cart" style="margin-right: 20px;">
+                    </a>
+                    <button class="open-button" onclick="openLoginForm()">
+                        <img src="/group1/components/header/static/img/user.png" alt="login" >
+                    </button>
+                    
+                    <a href="/group1/pages/favorites/templates/favorites.html">
+                        <img src="/group1/components/header/static/img/favorite.png" alt="favorite" onmouseover="this.src='/group1/components/header/static/img/favorite_black.png'" onmouseout="this.src='/group1/components/header/static/img/favorite.png'">
+                    </a>
+
+                    <div class="form-popup" id="myForm">
+                        <form class="form-container" action="/todo" method="signIn">
+                            <h2>הרשמה</h2>   
+                            <label class="lable" for="email"><b>אימייל</b></label>
+                            <input type="text" placeholder="הכנס אימייל" name="email" id="email" required>
+                            <label class="lable" for="psw"><b>סיסמה</b></label>
+                            <input type="password" placeholder="הכנס סיסמה" name="psw" id="psw" required>
+                            <button type="submit" class="btn">היכנס</button>
+                            <p><span>או</span></p>
+                            <button type="button" class="btn signup" onclick="location.href='/group1/pages/register/templates/register.html'">להרשמה</button>
+                            <button type="button" class="btn cancel" onclick="closeLoginForm()">ביטול</button>                      
+                        </form>
+                    </div>
+                </div>
+
+
+                <h1>B-MINE</h1>
+                <h3>BUY MY STYLE</h3>
+                
+                <nav>
+                    <div class="nav-bar">
+                        <a class="option" href="/group1/pages/home_page/templates/home_page.html">דף הבית</a>
+
+                        <a class="option" href="/group1/pages/contact us/templates/contact_us.html" >צור קשר</a>
+
+                        <a class="option" href="/group1/pages/who we are/templates/who_we_are.html">מי אנחנו</a>
+
+                        <div class="dropdown option">
+                            <i class="arrowDown"></i>
+                            <p class="option">עוד</p>
+                            <div class="dropdown-content">
+                                <a href="/group1/pages/qa/templates/qa.html">שאלות נפוצות</a>
+                                <a href="/group1/pages/terms_of_use/templates/terms_of_use.html">תקנון</a>
+                                <a href="/group1/pages/Excange_Return/templates/exchange_returns.html">החלפות והחזרות</a>
+                            </div>
+                        </div>
+                        
+                        <a class="option" href="/group1/pages/events/templates/events.html">אירועים</a>
+                        <a class="option" href="/group1/pages/sale/templates/sale.html">פריטי חיסול</a>
+
+                    </div>
+                    <hr>
+                </nav>
+            </div>
+        </header>
+    </body>
+</html>

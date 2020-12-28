@@ -1,0 +1,119 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root{
+    --pink-border:#f6e3da
+}
+
+body {
+    border: 10px solid var(--pink-border);
+    box-sizing: border-box;
+    /*disable content selection*/
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+main{
+    background: var(--main-color-2,whitesmoke);
+    padding-bottom: 100px;
+}
+
+
+.container{
+    padding: 1%;
+    width: 80%;
+    background-color: var(--main-color-1,#f6e3da);
+    max-width: 1000px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    border: 10px double  burlywood;
+    border-radius: 25px;
+    margin-bottom: 40px;
+}
+
+.start{
+    margin-top: -10px;
+}
+
+.start h3{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+.event_dateTime, .event_place{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.event_dateTime p, .event_place p{
+    display: inline;
+}
+
+#eventDate, #startH, #eventCity{
+    font-weight: bold;
+}
+
+.input-info, select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid  rgba(150, 101, 101, 0.5);
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 43%;
+    text-align: right;
+}
+
+select:focus{
+    outline: none;
+}
+
+.detail {
+    padding: 15px;
+    display: inline-block;
+    margin-bottom: 6px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.detail label{
+    position: relative;
+    top: 15px;
+    float: right;
+    margin-right: 24%;
+}
+.button-submit button{
+    align-content: center;
+    background-color:  whitesmoke;
+    color: black;
+    width: 15%;
+    height: 50px;
+    font-size: 20px  ;
+    margin-top: 100px;
+    border-radius: 4px;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.button-submit button:focus{
+    outline: none;
+}
+
+.button-submit button:hover{
+    cursor: pointer;
+    background-color: rgba(150, 101, 101, 0.5);
+}
+
+.input-info:focus{
+    outline: none;
+    background-color: whitesmoke;
+}

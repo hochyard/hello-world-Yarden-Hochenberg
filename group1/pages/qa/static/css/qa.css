@@ -1,0 +1,111 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root{
+    --pink-border:#f6e3da
+}
+
+body {
+    border: 10px solid var(--pink-border);
+    box-sizing: border-box;
+    /*disable content selection*/
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+main{
+    background: var(--main-color-2,whitesmoke);
+    padding-bottom: 100px;
+}
+
+
+.container{
+    padding: 1%;
+    width: 80%;
+    background-color: var(--main-color-1,#f6e3da);
+    max-width: 1000px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    border: 10px double  burlywood;
+    border-radius: 25px;
+    margin-bottom: 40px;
+}
+
+.accordion {
+    margin-top: 8px;
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: right;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 14px;
+    color: var(--pink-border);
+    float: left;
+    margin-left: 5px;
+    margin-top: 11px;
+
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+.active, .accordion:hover {
+    background-color: #ccc; 
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: rgb(253, 251, 251);
+    overflow: hidden;
+}    
+
+
+.container p{
+    text-align: right;
+    font-size: 18px;
+    line-height: 0.3em;
+    margin: 10px 0 20px;
+}
+
+#finish{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
+    font-size: 20px; 
+    text-align: center;
+    font-weight: bold;
+}
+
+.container a{
+    margin-left: -10px;
+    margin-right: -10px;
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.container a:hover{
+    opacity: 0.5;
+}
+
+.container img{
+    width: 35px;
+    border: 3px solid var(--pink-border);
+    margin-left: 10px;
+}

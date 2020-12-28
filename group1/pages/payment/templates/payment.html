@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>פרטי תשלום</title>
+        <link rel="stylesheet" href="/group1/components/header/static/css/header.css">
+        <link rel="stylesheet" href="/group1/pages/payment/static/css/payment.css">
+        <link rel="stylesheet" href="/group1/components/footer/static/css/footer.css">
+        <link rel="stylesheet" href="/group1/components/photo_title/static/css/photo_title.css">
+        <script src="/group1/components/header/static/js/header.js"></script>
+        <script src="/group1/pages/payment/static/payment.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header_container">
+                <div class="top-nav">
+                    <a href="/group1/pages/cart/templates/cart.html">
+                        <img src="/group1/components/header/static/img/shopping-bag.png" alt="cart" style="margin-right: 20px;">
+                    </a>
+                    <button class="open-button" onclick="openLoginForm()">
+                        <img src="/group1/components/header/static/img/user.png" alt="login" >
+                    </button>
+                    
+                    <a href="/group1/pages/favorites/templates/favorites.html">
+                        <img src="/group1/components/header/static/img/favorite.png" alt="favorite" onmouseover="this.src='/group1/components/header/static/img/favorite_black.png'" onmouseout="this.src='/group1/components/header/static/img/favorite.png'">
+                    </a>
+
+                    <div class="form-popup" id="myForm">
+                        <form class="form-container" action="/todo" method="signIn">
+                            <h2>הרשמה</h2>   
+                            <label class="lable" for="email"><b>אימייל</b></label>
+                            <input type="text" placeholder="הכנס אימייל" name="email" id="email" required>
+                            <label class="lable" for="psw"><b>סיסמה</b></label>
+                            <input type="password" placeholder="הכנס סיסמה" name="psw" id="psw" required>
+                            <button type="submit" class="btn">היכנס</button>
+                            <p><span>או</span></p>
+                            <button type="button" class="btn signup" onclick="location.href='/group1/pages/register/templates/register.html'">להרשמה</button>
+                            <button type="button" class="btn cancel" onclick="closeLoginForm()">ביטול</button>                      
+                        </form>
+                    </div>
+                </div>
+
+
+                <h1>B-MINE</h1>
+                <h3>BUY MY STYLE</h3>
+                
+                <nav>
+                    <div class="nav-bar">
+                        <a class="option" href="/group1/pages/home_page/templates/home_page.html">דף הבית</a>
+
+                        <a class="option" href="/group1/pages/contact us/templates/contact_us.html" >צור קשר</a>
+
+                        <a class="option" href="/group1/pages/who we are/templates/who_we_are.html">מי אנחנו</a>
+
+                        <div class="dropdown option">
+                            <i class="arrowDown"></i>
+                            <p class="option">עוד</p>
+                            <div class="dropdown-content">
+                                <a href="/group1/pages/qa/templates/qa.html">שאלות נפוצות</a>
+                                <a href="/group1/pages/terms_of_use/templates/terms_of_use.html">תקנון</a>
+                                <a href="/group1/pages/Excange_Return/templates/exchange_returns.html">החלפות והחזרות</a>
+                            </div>
+                        </div>
+                        
+                        <a class="option" href="/group1/pages/events/templates/events.html">אירועים</a>
+                        <a class="option" href="/group1/pages/sale/templates/sale.html">פריטי חיסול</a>
+
+                    </div>
+                    <hr>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="my-cart">
+                <div class="title"><div class="bg-text">פרטי תשלום</div></div>             
+                
+                <div class="row">
+                    <div class="col-70">
+                        <div class="container">
+                            <form action="/todo" method="post" name="frm">
+                                <div class="row">
+                                    <div class="col-50">
+                                        <span class="info-title">כתובת למשלוח</span>
+                                        <label>פרטי מקבל המשלוח</label>
+                                        <label for="full-name"><i class="fa fa-user"></i> שם מלא </label>
+                                        <input type="text" id="full-name" name="full-name" required >
+                                        <label for="e-mail"><i class="fa fa-envelope" ></i> איימיל</label>
+                                        <input type="text" id="e-mail" name="email" placeholder="aaa@example.com" required>
+                                        <label for="adr"><i class="fa fa-address-card-o"></i> כתובת </label>
+                                        <input type="text" id="adr" name="address" required>
+                                        <label for="city"><i class="fa fa-institution"></i> עיר </label>
+                                        <input type="text" id="city" name="city" required>
+                                    </div>
+
+                                    <div class="col-50">
+                                        <span class="info-title">תשלום</span>
+                                        <label>פרטי הכרטיס</label>
+                                        <label for="cname">שם מלא</label>
+                                        <input type="text" id="cname" name="cardname" placeholder="" required>
+                                        <label for="ccnum">מספר כרטיס האשראי</label>
+                                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+
+                                        <div class="row">
+                                            <div class="col-50">
+                                                <label for="expmonth">(תוקף(חודש</label>
+                                                <input type="text" id="expmonth" name="expmonth" placeholder="" required>
+                                            </div>
+                                            <div class="col-50">
+                                                <label for="expyear">תוקף (שנה)</label>
+                                                <input type="text" id="expyear" name="expyear" placeholder="" required>
+                                            </div>
+                                            <div class="col-50">
+                                                <label for="cvv">CVV</label>
+                                                <input type="text" id="cvv" name="cvv" placeholder="***" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="my-button boutique" onclick="payMesage()">תשלום</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-30">
+                        <div class="container">
+                            <span class="info-title">פרטי ההזמנה</span>
+                            <p>אוברול שחור <span class="price">₪100</span></p>
+                            <p>טופ ספורט נייק<span class="price">₪70</span></p>
+                            <p>טרנינג נייק<span class="price">₪130</span></p>
+                                <hr>
+                            <p>סיכום ביניים <span class="price">₪300</span></p>
+                            <p>סך הנחות ומבצעים<span class="price">₪0</span></p>
+                            <p>דמי משלוח<span class="price">₪0</span></p>
+                            <hr>
+                            <p>סך הכל לתשלום <span class="price total" ><b>₪300</b></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="links">
+                <div class="footer-part">
+                    <a class="op" href="/group1/pages/qa/templates/qa.html">שאלות נפוצות</a>
+                    <a class="op" href="/group1/pages/contact us/templates/contact_us.html">צור קשר</a>
+                    <a class="op" href="/group1/pages/terms_of_use/templates/terms_of_use.html">תקנון</a>
+                </div>
+
+                <div class="footer-part">
+                    <a class="op" href="/group1/pages/who we are/templates/who_we_are.html">מי אנחנו</a>
+                    <p class="Ftitle">אמצעי תשלום</p>
+                    <img class="payment" src="/group1/components/footer/static/img/paypal.png" alt="paypal"/>
+                    <img class="payment" src="/group1/components/footer/static/img/mastercard.png" alt="mastercard"/>
+                    <img class="payment" src="/group1/components/footer/static/img/visa.png" alt="visa"/>
+                    <img class="payment" src="/group1/components/footer/static/img/american-express.png" alt="american-express"/>
+                </div>
+
+                <div class="footer-part">
+                    <p class="Ftitle">שירות לקוחות</p>
+                    <div class="contactDetails">
+                        <a class="op" href="tel:054-6798654">054-6798654</a>
+                        <a class="op" href="mailto:bmine@gmail.com">bmine@gmail.com</a> 
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
