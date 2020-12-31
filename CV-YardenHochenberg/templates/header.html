@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+ <header>
+        <img id="mainPic" src="{{ url_for('static',filename='img/linkedin profile.JPG') }}" alt="Can't load the image">
+        <div id="name" style="display: inline-block;">
+            <b>Yarden Hochenberg</b>
+        </div>
+        <div id="contact">
+            <img src="{{ url_for('static',filename='img/telephone.png') }}" alt="Can't load the image" width="20px" >
+            <p id="telephone" style="display: inline-block;">050-8635558</p>
+            <img src="{{ url_for('static',filename='img/email.png') }}" alt="Can't load the image" width="20px">
+            <a href="mailto:yardenho@gmail.com" target="_blank" style="display: inline-block;"><p id="email">yardenho@gmail.com</p></a>
+            <img src="{{ url_for('static',filename='img/linkedin.png') }}" alt="Can't load the image" width="20px">
+            <a href="https://www.linkedin.com/in/yarden-hochenberg-41bb30193/" target="_blank">LinkedIn Profile</a>
+        </div>
+        <a id="bold" href="{{ url_for('static',filename='pdf/Yarden Hochenberg - CV.pdf') }}" download="Yarden Hochenberg CV"><button id="bold" style="background-color: rgb(243, 213, 213);">Download to pdf</button></a>
+</header>
